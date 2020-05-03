@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;  
+
+}
+.sliderDiv{
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex: 100vw;
+    height: 100vh;
+}
+.home {
+    background-image: url(img/home\ 1.jpg);
+}
+.extention {
+    background-image: url(img/exten\ 1.jpg);
+}
+.lamination {
+    background-image: url(img/lami\ 1.jpg);
+}
+.brows{
+    background-image: url(img/brows\ 1.jpg);
+}
+.contacts{
+    background-image: url(img/contacts\ 1.jpg);
+}
+
+.forButtons {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.forButtons-big{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.text {
+    font-family: 'Pattaya';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    color: #196E96;
+    z-index: 2;
+
+}
+.textOfHome{
+    font-size: 19px;
+}
+.textHome {
+    position: relative;
+    margin-top : 100% ;
+    background-image: url(img/whiteBGhome.png);
+    width: 291px;
+    height: 91.5px;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+.textExtention{
+    position: relative;
+    margin-top : 100% ;
+    background-image: url(img/whiteBGextention.png);
+    width: 292px;
+    height: 234px;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+.textLamination{
+    position: relative;
+    margin-top : 100% ;
+    background-image: url(img/whiteBGextention.png);
+    width: 300px;
+    height: 234px;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+.textBrows {
+    position: relative;
+    margin-top : 100% ;
+    background-image: url(img/whiteBGextention.png);
+    width: 291px;
+    height: 156px;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+.textContacts {
+    position: relative;
+    margin-top : 47% ;
+    background-image: url(img/whiteBGcontacts.png);
+    width: 286px;
+    height: 389px;
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.firstContacts{
+    margin-top: 110px;
+    font-size: 14px;
+    color:  #196E96;
+    text-decoration: none;
+}
+.secondContacts{
+    margin-top: 88px;
+    font-size: 14px;
+    color:  #196E96;
+    text-decoration: none;
+}
+a{
+    color:  #196E96;
+    text-decoration: none
+}
+.slider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+.polosa {
+    display: flex;
+    position: relative;
+    width: 500vw;
+    left: 0;
+    transition: all ease 1s;
+}
+.polosa-big{
+    display: flex;
+    position: relative;
+    width: 500vw;
+    left: 0;
+    transition: all ease 1s;
+}
+.polosa img {
+    float: left;
+}
+.polosa::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+button {
+    background: none;
+    border: none;
+}
+.slider-big{
+    display: none;
+}
+@media (min-width: 1000px){
+    .text-big{
+        margin-top: 40vh;
+        font-size: 30px;
+        
+    }
+    .extentionText-big {
+        margin-top: 0;
+        font-size: 22px;
+    }
+    .laminationText-big{
+        margin-top: 70px;
+        font-size: 22px;
+    }
+    .browsText-big{
+        margin-top: 71px;
+        font-size: 22px;
+    }
+    .contactsText-big{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 320px;
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 550px) {
+    .forButtons-big{
+        display: flex;
+        padding: 10px;
+    }
+    .forButtons{
+        display: none;
+    }
+    .slider-small{
+        display: none;
+    }
+    .slider-big{
+        display: flex;
+        position: absolute;
+    }
+    .opacity {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: white;
+        opacity: 30%;
+    }
+    .wrapForNameTaxtButtons{
+        position: absolute;
+        width: 68vw;
+        height: 66vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nameOfPaje-big {
+        background-color: rgba(0, 247, 255, 0.432);
+        font-family: 'Monoton';
+        color: white;
+        font-size: 50px;
+        clip-path: polygon(0 0, 100% 7%, 97% 100%, 4% 100%);
+        padding: 10px 15px;
+        max-width: 448px;
+        text-align: center;
+    }
+    .text-big{
+        background-color: rgba(255, 255, 255, 0.507);
+        color: #196E96;
+        padding: 10px 30px;
+        padding-top: 40px;
+        font-style: 30px;
+        font-family: 'Pattaya';
+        clip-path: polygon(0 8%, 99% 0, 92% 100%, 4% 100%);
+        max-width: 35vw;
+        margin-top: 20vh;
+        margin-left: 33vw;
+        z-index: 2;
+    }
+    .forShadow {
+        
+        width: 55vw;
+        height: 60vh;
+        -webkit-box-shadow: 0px 0px 140px 32px #FF2ED9; 
+        box-shadow: 0px 0px 140px 32px #FF2ED9;
+    } 
+    .home-medium {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(img/home.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .homeInner-medium{
+        position: absolute;
+        display: block;
+        width: 65vw;
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 96% 100%, 7% 100%);
+        background-image: url(img/home.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-box-shadow: 0px 0px 50px 7px #FF2ED9; 
+        box-shadow: 0px 0px 50px 7px #FF2ED9;
+    }
+    .extention-medium{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(img/exten.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .extentionInner-medium{
+        position: absolute;
+        display: block;
+        width: 65vw;
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 96% 100%, 7% 100%);
+        background-image: url(img/exten.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-box-shadow: 0px 0px 50px 7px #FF2ED9; 
+        box-shadow: 0px 0px 50px 7px #FF2ED9;
+    }
+  
+    .lamination-medium {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(img/lami.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .laminationInner-medium{
+        position: absolute;
+        display: block;
+        width: 65vw;
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 96% 100%, 7% 100%);
+        background-image: url(img/lami.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-box-shadow: 0px 0px 50px 7px #FF2ED9; 
+        box-shadow: 0px 0px 50px 7px #FF2ED9;
+    }
+    .brows-medium {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(img/brows.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .browsInner-medium{
+        position: absolute;
+        display: block;
+        width: 65vw;
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 96% 100%, 7% 100%);
+        background-image: url(img/brows.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-box-shadow: 0px 0px 50px 7px #FF2ED9; 
+        box-shadow: 0px 0px 50px 7px #FF2ED9;
+    }
+
+    .contacts-medium {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(img/contacts.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .contactsInner-medium{
+        position: absolute;
+        display: block;
+        width: 65vw;
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0, 96% 100%, 7% 100%);
+        background-image: url(img/contacts.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-box-shadow: 0px 0px 50px 7px #FF2ED9; 
+        box-shadow: 0px 0px 50px 7px #FF2ED9;
+    }
+    .contactsText-big {
+        margin-top: 14vh;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 1000px){
+    .text-big{
+        margin-bottom : 20vh;
+    }
+    .extentionText-big {
+        margin-top: 0;
+        font-size: 10px;
+    }
+    .laminationText-big{
+        margin-top: 28px;
+        font-size: 10px;
+    }
+    .browsText-big{
+        margin-top: 71px;
+        font-size: 10px;
+    }
+    .contactsText-big{
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 320px;
+        font-size: 10px;
+    }
+}
